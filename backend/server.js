@@ -11,7 +11,7 @@ app.use(cookieParser());
 
 app.use(
   cors({
-    origin: "https://login-app-topaz-delta.vercel.app/",
+    origin: "https://login-app-topaz-delta.vercel.app",
     credentials: true,
     methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
   })
