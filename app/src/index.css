@@ -1,0 +1,328 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.home-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1; /* Keeps the video in the background */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.welcome-card {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+  /* box-shadow: 0 4px 10px black; */
+  max-width: 430px;
+  /* padding: 20px; */
+}
+
+.card-title {
+  color: whitesmoke;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.card-text {
+  color: #E6E6FA;
+  font-size: 1.2rem;
+}
+
+.card-text-p{
+  color: dodgerblue;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.card-text-login-p{
+  color: green;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.highlight {
+  color: #007bff; /* Blue color */
+  font-weight: bold;
+}
+.signup-card {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); */
+  max-width: 400px;
+  padding: 20px;
+}
+.card-body{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: white;
+}
+
+
+.dashboard-home {
+  background-color: #f0f8ff; /* Light blue background */
+  min-height: 100vh; /* Full height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.heading {
+  color: #2776cb;
+  font-size: 2.5rem;
+  margin-top: 120px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.subheading {
+  color: #333;
+  font-size: 1.1rem;
+  text-align: center;
+  max-width: 600px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.home_card{
+  border-radius: 15px;
+}
+.card-img-top{
+  height: 250px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+  /* width: 250px; */
+}
+.place-name{
+  color: black;
+}
+
+.mission{
+  background-size: cover;
+  height: 80vh;
+}
+
+/* .about-container {
+position: relative;
+width: 100%;
+min-height: 100vh;
+background-image: url("/path-to-your-image.jpg"); 
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.content {
+text-align: center;
+background: rgba(255, 255, 255, 0.8); 
+padding: 20px;
+border-radius: 10px;
+}
+
+ */
+
+
+ .about-container {
+  position: relative;
+  text-align: center;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; /* Ensure text is visible on image */
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+}
+
+.image-overlay h1 {
+  font-size: 5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.mission {
+  display: block;
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+  object-position: top;
+}
+
+.mission-bg{
+  background-color: whitesmoke;
+  padding: 25px;
+}
+.mission_p{
+  word-spacing: 5px;
+  font-size: 17px;
+  color: rgb(107, 105, 105);
+  width: 50vw;
+}
+
+.goal-container {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.goal-container img {
+  height: 50vh;
+  display: block;
+
+}
+
+.goal-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  padding: 10px 15px;
+  border-radius: 8px;
+}
+.our_img{
+  width: 400px;
+  height: 300px;
+}
+.mission_h{
+  word-spacing: 5px;
+  font-size: 17px;
+  font-weight: bold;
+  color: rgb(107, 105, 105);
+  width: 60vw;
+}
+
+.contact_container{
+  background-color: rgb(21, 21, 65);
+  /* height: 100vh; */
+  width: 100vw;
+}
+.contact_h1{
+  padding-top: 100px;
+  text-align: center;
+  color: whitesmoke;
+  font-weight: bold;
+}
+.contactus{
+  color: whitesmoke;
+}
+.contact_box{
+  height: 210px;
+  width: 90%;
+}
+.main_card{
+  height: 200px;
+  width: 200px;
+  margin-left: 15px;
+}
+.form_heading{
+  color: black;
+}
+.contactus_form{
+  background-color: rgb(196, 226, 237);
+}
+.contact-submitbtn{
+  width: 150px;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.contact_icon{
+  font-size: 60px;
+  color: rgb(146, 207, 229);
+  margin-top: 5px;
+}
+
+.exlpore_event_box{
+  height: 300px;
+  width: 300px;
+  margin: 10px;
+  background-color: pink;
+}
+.eventExpore_card{
+  background-color: rgb(69, 207, 131);
+}
+.ongoing_title{
+  color: orange;
+}
+.impact_container{
+  /* height: 100vh; */
+  width: 100vw;
+  background-color: rgb(243, 207, 212);
+}
+.heading_impact{
+  padding-top: 75px;
+  text-align: center;
+  color: rgb(153, 3, 153);
+  font-weight: bold;
+}
+.impact_card{
+  display: flex;
+  justify-content: space-between;
+}
+.mainExplore_container{
+  background-color: rgb(210, 232, 232);
+  height: 100vh;
+}
+.form_register{
+  background-color: red;
+}
+
+.card-welcome{
+  color: rgb(245, 71, 245);
+}
+
+.dashboard {
+  background-image:url("./assets/dash-back.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(3, 3, 171);
+  font-size: 2rem;
+  object-fit: cover;
+}
+/* .logout-btn {
+  transition: background-color 0.3s ease;
+} */
+
+.logout-btn:hover {
+  background-color: red !important;
+  color: white !important;
+  border: 1px solid red;
+}
+
