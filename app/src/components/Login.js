@@ -27,7 +27,7 @@ const Login = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post("http://localhost:5000/api/users/login", formData);
+      const response = await axios.post("https://login-signup-xi-five.vercel.app/api/users/login", formData);
       if (response.status === 200) {
         toast.success("Login successful!", {
           position: "top-right",
